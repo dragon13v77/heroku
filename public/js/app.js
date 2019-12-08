@@ -1,7 +1,7 @@
 const app = (function () {
 	return {
 		init() {
-			document.getElementById('page_title').innerHTML = 'Hello Heroku!';
+			document.getElementById('page_title').innerHTML = 'Hello Heroku!!';
 			return this;
 		},
 	};
