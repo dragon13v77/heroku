@@ -1,8 +1,9 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const path = require('path');
 
 app.get('/', function(req, res) {
-	res.send('Welcome to the simple node application!');
+	res.sendFile(path.join(__dirname, 'index.html'));
 });
 var server = app.listen(process.env.PORT || 4000, function() {
 	console.log('Your node js server is running');
